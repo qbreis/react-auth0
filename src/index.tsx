@@ -13,6 +13,7 @@ ReactDOM.render(
         authorizationParams={{
             redirect_uri: window.location.origin,
         }}
+        {/* Documentation: https://auth0.com/docs/libraries/auth0-react */}
     >
         <App />
     </Auth0Provider>,
