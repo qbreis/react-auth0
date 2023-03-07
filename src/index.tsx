@@ -6,6 +6,8 @@ import "./index.css";
 const domain:string = process.env.REACT_APP_AUTH0_DOMAIN!; // Use type string + non-null assertion operator !
 const clientId:string = process.env.REACT_APP_AUTH0_CLIENT_ID!; // Use type string + non-null assertion operator !
 
+/* Documentation: https://auth0.com/docs/libraries/auth0-react */
+
 ReactDOM.render(
     <Auth0Provider
         domain={domain}
@@ -13,7 +15,6 @@ ReactDOM.render(
         authorizationParams={{
             redirect_uri: window.location.origin,
         }}
-        {/* Documentation: https://auth0.com/docs/libraries/auth0-react */}
     >
         <App />
     </Auth0Provider>,
